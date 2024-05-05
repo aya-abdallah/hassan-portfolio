@@ -66,7 +66,7 @@ class Modal extends Component {
                             <li className=" tag-list montserrat" key={index}>{tag.name}</li>
                         )}
                     </ul>
-                    <div className="Mukta">{this.props.project.description}</div>
+                    <div className="Mukta description">{this.props.project.description}</div>
                    
 
                 </div>

@@ -81,8 +81,8 @@
 }
 
 .iframe {
-    height: 260px;
-    width: 400px;
+    height: 14rem;
+    width: 70%;
 }
 
 .tag-list {
@@ -108,4 +108,25 @@
 
 .tag-list:last-child::after {
     display: none;
+}
+
+
+@media (max-width: 700px) {
+    .dialog {
+        position: fixed;
+        left: 50%;
+        top: 53%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        border-radius: 1rem;
+        background: #252424;
+        box-shadow: 0rem 0rem 1rem rgba(37, 38, 41, 0.12);
+        padding: 1rem 01rem;
+        color: white;
+    }
+    .description{
+        height: 100px;
+        overflow-y: scroll;
+    }
 }

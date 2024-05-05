@@ -28,7 +28,7 @@ export function Navigation(props) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className={`navbar-collapse offcanvas-collapse nav-elements  ${showNavbar? "open":""}`} id="navbarsExampleDefault">
+                <div className={`navbar-collapse offcanvas-collapse ${showNavbar? "open":""}`} id="navbarsExampleDefault">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item" onClick={()=>setShowNavbar(false)}>
                             <Link className="nav-link page-scroll" to="/">Home</Link>
