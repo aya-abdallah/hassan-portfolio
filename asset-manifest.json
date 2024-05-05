@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bdfb894a.css",
+    "main.js": "/static/js/main.292a0570.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/Multiplayer.png": "/static/media/Multiplayer.cf745757bcd691fc2572.png",
+    "static/media/AR&VR.png": "/static/media/AR&VR.d323ad0ba71319981077.png",
+    "static/media/Mukta-Regular.ttf": "/static/media/Mukta-Regular.044d4dd07d7636695eda.ttf",
+    "static/media/Merienda-VariableFont_wght.ttf": "/static/media/Merienda-VariableFont_wght.373b823211bb1d6f1f8b.ttf",
+    "static/media/Alegreya-Regular.ttf": "/static/media/Alegreya-Regular.9dd363093a9bdcef2965.ttf",
+    "static/media/Unity.png": "/static/media/Unity.660982af4d24e51c8574.png",
+    "static/media/Holden-Medium-trial.ttf": "/static/media/Holden-Medium-trial.d26244c50b08a149cba8.ttf",
+    "static/media/Play-Regular.ttf": "/static/media/Play-Regular.e0424c5771f87080b05e.ttf",
+    "static/media/Platypi-VariableFont_wght.ttf": "/static/media/Platypi-VariableFont_wght.41b67322020f36a9551c.ttf",
+    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/lmromanslant10-regular.otf": "/static/media/lmromanslant10-regular.eb061075deff66a73ba3.otf",
+    "static/media/Blenda Script.otf": "/static/media/Blenda Script.184c67447026dce1ee5f.otf",
+    "static/media/Unreal.png": "/static/media/Unreal.197dfa054fdf40f2d57d.png",
+    "static/media/BerkshireSwash-Regular.ttf": "/static/media/BerkshireSwash-Regular.deb8b610d048e614dbbf.ttf",
+    "static/media/header-background.jpg": "/static/media/header-background.83a6f755e688b1075c83.jpg",
+    "static/media/TechnaSans-Regular.otf": "/static/media/TechnaSans-Regular.c3353ef9bfda722f06e9.otf",
+    "static/media/Prototype.ttf": "/static/media/Prototype.be9924a47c44090561d7.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.e20d5327f1a05620c084.ttf",
+    "static/media/Timeline.ttf": "/static/media/Timeline.03ddbb5188ed1b39dc74.ttf",
+    "index.html": "/index.html",
+    "main.bdfb894a.css.map": "/static/css/main.bdfb894a.css.map",
+    "main.292a0570.js.map": "/static/js/main.292a0570.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdfb894a.css",
+    "static/js/main.292a0570.js"
+  ]
+}
