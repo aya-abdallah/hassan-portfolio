@@ -1,0 +1,64 @@
+.basic-1 {
+	padding-top: 4.75rem;
+	background: #100028;
+}
+
+.basic-1 .text-container {
+    text-align: left;
+	color: white;
+}
+
+.basic-1 .time {
+	margin-bottom: 0.5rem;
+	color: #0b36a8;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+.basic-1 h6 {
+	margin-bottom: 0.125rem;
+}
+
+/* Min-width 1200px */
+@media (min-width: 1200px) {
+
+	/* General Styles */
+	.h1-large {
+		font-size: 3.75rem;
+		line-height: 4.625rem;
+	}
+	/* end of general styles */
+
+
+	
+	/* About */
+	.basic-1 .text-container.first {
+		margin-right: 2rem;
+	}
+
+	.basic-1 .text-container.second {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.basic-1 .text-container.third {
+		margin-left: 2rem;
+	}
+	/* end of about */
+
+
+
+}
+
+.job-title{
+	color: #0b36a8;
+}
+.company{
+	margin-left: 2px;
+	font-style: italic;
+    color: royalblue;
+}
+.job-description{
+	margin-left: 10px;
+}
