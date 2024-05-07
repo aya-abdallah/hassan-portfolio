@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hassan-portfolio/static/css/main.e8b061dc.css",
-    "main.js": "/hassan-portfolio/static/js/main.6a92c33c.js",
-    "static/js/453.ace21015.chunk.js": "/hassan-portfolio/static/js/453.ace21015.chunk.js",
+    "main.js": "/hassan-portfolio/static/js/main.c52a0ad6.js",
+    "static/js/453.a70a4b3e.chunk.js": "/hassan-portfolio/static/js/453.a70a4b3e.chunk.js",
     "static/media/Multiplayer.png": "/hassan-portfolio/static/media/Multiplayer.cf745757bcd691fc2572.png",
     "static/media/AR&VR.png": "/hassan-portfolio/static/media/AR&VR.d323ad0ba71319981077.png",
     "static/media/Mukta-Regular.ttf": "/hassan-portfolio/static/media/Mukta-Regular.044d4dd07d7636695eda.ttf",
@@ -24,11 +24,11 @@
     "static/media/Timeline.ttf": "/hassan-portfolio/static/media/Timeline.03ddbb5188ed1b39dc74.ttf",
     "index.html": "/hassan-portfolio/index.html",
     "main.e8b061dc.css.map": "/hassan-portfolio/static/css/main.e8b061dc.css.map",
-    "main.6a92c33c.js.map": "/hassan-portfolio/static/js/main.6a92c33c.js.map",
-    "453.ace21015.chunk.js.map": "/hassan-portfolio/static/js/453.ace21015.chunk.js.map"
+    "main.c52a0ad6.js.map": "/hassan-portfolio/static/js/main.c52a0ad6.js.map",
+    "453.a70a4b3e.chunk.js.map": "/hassan-portfolio/static/js/453.a70a4b3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8b061dc.css",
-    "static/js/main.6a92c33c.js"
+    "static/js/main.c52a0ad6.js"
   ]
 }
