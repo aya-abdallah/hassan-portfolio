@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom';
 import Portfolio from './Components/Portfolio/Portfolio';
 import './App.css';
 import './GlobalStyles.scss'
-import { Profile } from './Components/Profile/Profile';
 
 function App() {
   return (
@@ -13,14 +12,9 @@ function App() {
       <Navigation />
 
       <Routes>
-        <Route path="/" exact element={<Home />}></Route>
-        <Route path='/portfolio' element={<Portfolio />} ></Route>
-
-
-
+        <Route path="/" exact element={<Home />} />
+        <Route path='/portfolio' element={<Portfolio />} />
       </Routes>
-
-
     </div>
   );
 }
