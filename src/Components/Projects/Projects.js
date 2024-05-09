@@ -5,7 +5,6 @@ import { collection, getDoc, getDocs, query, where } from "firebase/firestore";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 import Masonry from '@mui/lab/Masonry';
 import { Link } from 'react-router-dom';
-import { Tag } from "../Tag/Tag";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from "../Modal/Modal";
@@ -25,6 +24,7 @@ class Projects extends Component {
     componentDidMount() {
         this.getProjectProfile();
     }
+
     getProjectProfile = async () => {
         const projectsCol = query(collection(db, 'projects'), where("spotlight", "==", true));
         const allDocs = await getDocs(projectsCol);
@@ -83,7 +83,7 @@ class Projects extends Component {
                         <Modal project={this.state.currentProject} isOpen={this.state.isOpen} onClose={() => this.setState({ isOpen: false })} />}
 
                 </div >
-                <hr/>
+                <hr />
             </div>
         )
     }

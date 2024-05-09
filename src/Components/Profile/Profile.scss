@@ -1,11 +1,11 @@
 
 
 .header {
-	padding-top: 7rem;
+	padding-top: 8rem;
 	padding-bottom: 5.5rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
-	text-align: center;
+	text-align: left;
 }
 
 .header .h1-large {
@@ -34,27 +34,16 @@
 	margin-right: 0.375rem;
 }
 
-@media (min-width: 768px) {
-
-	/* Header */
-	.header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
-	}
-	/* end of header */
-
-}
-
 @media (min-width: 992px) {
     .header {
-		padding-top: 15rem;
+		padding-top: 10rem;
 		padding-bottom: 14rem;
 		text-align: left;
 	}
 }
 @media (min-width: 1200px) {
-    .header {
-		padding-top: 18.25rem;
-		padding-bottom: 17.25rem;
-	}
+    .h1-large {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
 }
