@@ -15,12 +15,12 @@ class Contacts extends Component {
             <section className="site-section" id="contact">
                 <div className="container">
                     <div className="row">
-                       
 
-                        <div className="col pl-md-5">
-                            <h3 className="mb-5 TechnaSans left">My Contact Details<br/>
-                            <h4>For any type of online project please don't hesitate to get in touch with me. </h4>
-                            </h3>
+
+                        <div className="col pl-md-5 white">
+                            <h3 className="TechnaSans left font-3">My Contact Details </h3>
+                            <h4 className="mb-5 left italic">For any type of online project please don't hesitate to get in touch with me. </h4>
+
                             <ul className="site-contact-details TechnaSans">
                                 <li>
                                     <span className="text-uppercase">Email</span>

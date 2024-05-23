@@ -1,50 +1,59 @@
 .block-47 {
-    margin: 0 auto;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
 	.block-47-image {
 		flex: 0 0 50px;
-		display: block;
+		width: 80px;
+		height: 80px;
+		z-index: 1000;
+		background: #100028;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
 		img {
-			
+
 			border-radius: 50%;
-			box-shadow: 0 2px 10px 0px rgba(0,0,0,.2);
+			box-shadow: 0 2px 10px 0px rgba(0, 0, 0, .2);
+			height: 80%;
 		}
 	}
+
 	.block-47-quote {
 		margin-left: 40px;
 		padding: 30px;
 		background: #333;
 		border-radius: 7px;
 		position: relative;
-		box-shadow: 0 2px 30px -2px rgba(0,0,0,.1);
-		
-		&:before {
-			content: "";
-			border: 1px solid red;
-			z-index: 2;
-			position: absolute;
-
-			left: -15px;
-
-			border-width: 0 20px 20px 0;
-			border-style: solid;
-			border-color: transparent #333 transparent transparent;
-		}
+		box-shadow: 0 2px 30px -2px rgba(0, 0, 0, .1);
+		margin-top: -40px;
 
 		.block-47-quote-author {
 			// font-size: 14px;
 			color: lighten(blue, 40%);
 		}
-		p{
+
+		p {
 			line-height: 34px;
 
 		}
 	}
 }
-.site-section{
-    background: #100028;
-    
+
+.site-section {
+	background: #100028;
+
 }
-.testmoinal{
-    margin:  0 auto;
-    color: aliceblue;
+
+.testmoinal {
+	margin: 0 auto;
+	color: aliceblue;
+}
+
+span.quotes {
+	font-size: 2.3rem;
 }

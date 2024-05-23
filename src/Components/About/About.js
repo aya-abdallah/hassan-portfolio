@@ -24,8 +24,6 @@ export function About(props) {
                                 <h6 className="job-title montserrat">Senior Game Developer</h6>
                                 <h6 className="company">Upwork - Freelance</h6>
                                 <p className="job-description montserrat">Worked on large scale multiplayer games for mobile.<br />
-                                    ▪ Managed a 1vs1 real-time fighting game with AWS backend.<br />
-                                    <br />
                                 </p>
 
                             </div>
@@ -35,7 +33,7 @@ export function About(props) {
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2022</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company">Chrono Games</h6>
-                                    <p className="job-description montserrat">• Managed game rework and project analysis for game features and server
+                                    <p className="job-description montserrat"> Managed game rework and project analysis for game features and server
                                         tech that can scale to millions of users.<br />
                                     </p>
                                 </div>
@@ -45,7 +43,7 @@ export function About(props) {
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2022</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company">Front Tech, LLC – Part Time</h6>
-                                    <p className="job-description montserrat">• Managed development and project architecture of a new mobile game.<br />
+                                    <p className="job-description montserrat"> Managed development and project architecture of a new mobile game.<br />
                                     </p>
 
                                 </div>
@@ -56,7 +54,7 @@ export function About(props) {
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2021</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company">Virtual Viewing Ltd</h6>
-                                    <p className="job-description montserrat">• Worked closely with company leadership to architect and design games.<br />
+                                    <p className="job-description montserrat"> Worked closely with company leadership to architect and design games.<br />
                                     </p>
                                 </div>
                             </div>

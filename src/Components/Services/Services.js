@@ -11,7 +11,7 @@ export function Services(props) {
                         <div className="services__title">
                             <div className="section-title">
                                 <span>Our services</span>
-                                <h2>What We do?</h2>
+                                <h2>What I do?</h2>
                             </div>
                             <p>If you hire a videographer of our team you will get a video professional to make a custom
                                 video for your business and, once the project is over.</p>

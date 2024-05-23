@@ -45,7 +45,7 @@ class Testimonial extends Component {
                     </div>
                     <div className="row testmoinal">
                         <Swiper
-                            
+
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,
@@ -69,19 +69,23 @@ class Testimonial extends Component {
                                 delay: 5000,
                                 disableOnInteraction: false,
                             }}
-                            modules={[Pagination,Autoplay]}
+                            modules={[Pagination, Autoplay]}
                             className="mySwiper"
                         >
                             {this.state.testimonials && (
-                                this.state.testimonials.map((testimonial,index) =>
+                                this.state.testimonials.map((testimonial, index) =>
                                     <SwiperSlide key={index}>
                                         <div className="block-47 d-flex ">
                                             <div className="block-47-image">
                                                 <img src={testimonial.picture} alt="Image placeholder" className="img-fluid" />
                                             </div>
                                             <blockquote className="block-47-quote">
-                                                <p className="Holden font-1">&ldquo; {testimonial.review} &rdquo;</p>
-                                                <cite className="block-47-quote-author TechnaSans font-2">&mdash; {testimonial.clientName}</cite>
+                                                <p className="Holden font-1">
+                                                    <span className="quotes">&ldquo; </span>
+                                                    {testimonial.review}
+                                                    <span  className="quotes" >&rdquo;</span>
+                                                </p>
+                                                <cite className="block-47-quote-author TechnaSans font-2">{testimonial.clientName}</cite>
                                             </blockquote>
                                         </div>
                                     </SwiperSlide>

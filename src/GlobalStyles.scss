@@ -2,6 +2,7 @@ body,
 html {
 	width: 100%;
 	height: 100%;
+	background: #100028;
 }
 
 .li-space-lg li {
@@ -55,25 +56,6 @@ html {
 	text-decoration: none;
 }
 
-.btn-solid-lg {
-	display: inline-block;
-	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 0.875rem;
-	line-height: 0;
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-solid-lg:hover {
-	background-color: transparent;
-	color: #0b36a8;
-	/* needs to stay here because of the color property of a tag */
-	text-decoration: none;
-}
 
 .btn-outline-reg {
 	display: inline-block;
@@ -257,6 +239,9 @@ input[type='checkbox'] {
 	background-color: transparent;
 	color: #24262a;
 }
+.italic{
+	font-style: italic;
+}
 
 .pointer {
 	cursor: pointer;
@@ -268,6 +253,9 @@ input[type='checkbox'] {
 
 .font-2 {
 	font-size: 1rem;
+}
+.font-3{
+	font-size: 2.5rem;
 }
 
 .left{
