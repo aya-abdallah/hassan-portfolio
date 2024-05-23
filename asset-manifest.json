@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hassan-portfolio/static/css/main.fbcee223.css",
-    "main.js": "/hassan-portfolio/static/js/main.26e87d49.js",
+    "main.css": "/hassan-portfolio/static/css/main.da3a15c7.css",
+    "main.js": "/hassan-portfolio/static/js/main.14256e72.js",
     "static/js/453.a70a4b3e.chunk.js": "/hassan-portfolio/static/js/453.a70a4b3e.chunk.js",
     "static/media/Multiplayer.png": "/hassan-portfolio/static/media/Multiplayer.cf745757bcd691fc2572.png",
     "static/media/AR&VR.png": "/hassan-portfolio/static/media/AR&VR.d323ad0ba71319981077.png",
@@ -23,12 +23,12 @@
     "static/media/Montserrat-Regular.ttf": "/hassan-portfolio/static/media/Montserrat-Regular.e20d5327f1a05620c084.ttf",
     "static/media/Timeline.ttf": "/hassan-portfolio/static/media/Timeline.03ddbb5188ed1b39dc74.ttf",
     "index.html": "/hassan-portfolio/index.html",
-    "main.fbcee223.css.map": "/hassan-portfolio/static/css/main.fbcee223.css.map",
-    "main.26e87d49.js.map": "/hassan-portfolio/static/js/main.26e87d49.js.map",
+    "main.da3a15c7.css.map": "/hassan-portfolio/static/css/main.da3a15c7.css.map",
+    "main.14256e72.js.map": "/hassan-portfolio/static/js/main.14256e72.js.map",
     "453.a70a4b3e.chunk.js.map": "/hassan-portfolio/static/js/453.a70a4b3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbcee223.css",
-    "static/js/main.26e87d49.js"
+    "static/css/main.da3a15c7.css",
+    "static/js/main.14256e72.js"
   ]
 }
