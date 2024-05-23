@@ -49,11 +49,11 @@ class Testimonial extends Component {
                             breakpoints={{
                                 640: {
                                     slidesPerView: 1,
-                                    spaceBetween: 10,
+                                    spaceBetween: 20,
                                 },
                                 768: {
                                     slidesPerView: 1,
-                                    spaceBetween: 10,
+                                    spaceBetween: 20,
                                 },
                                 1024: {
                                     slidesPerView: 1,
@@ -65,10 +65,10 @@ class Testimonial extends Component {
                                 type: 'bullets',
                             }}
                             loop={true}
-                            autoplay={{
-                                delay: 5000,
-                                disableOnInteraction: false,
-                            }}
+                            // autoplay={{
+                            //     delay: 5000,
+                            //     disableOnInteraction: false,
+                            // }}
                             modules={[Pagination, Autoplay]}
                             className="mySwiper"
                         >
