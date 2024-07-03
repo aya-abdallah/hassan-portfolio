@@ -131,7 +131,7 @@ export function Pagination(props) {
                                     <h4>{project.name}</h4>
                                     <ul>
                                         {project.tags.map((tag, index) =>
-                                            <li className="montserrat" key={index}>{tag.name}</li>
+                                            <li className="TechnaSans" key={index}>{tag.name}</li>
                                         )}
                                     </ul>
                                 </div>

@@ -19,7 +19,7 @@ class Contacts extends Component {
 
                         <div className="col pl-md-5 white">
                             <h3 className="TechnaSans left font-3">My Contact Details </h3>
-                            <h4 className="mb-5 left italic">For any type of online project please don't hesitate to get in touch with me. </h4>
+                            <h4 className="mb-5 left italic">Have a question or a project? don't hesitate to get in touch with me. </h4>
 
                             <ul className="site-contact-details TechnaSans">
                                 <li>
@@ -39,16 +39,16 @@ class Contacts extends Component {
 
                                     <a href="https://www.linkedin.com/in/hassan-naser/"
                                         target="_blank"
-                                        rel="noreferrer" class="social-item text-center"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
+                                        rel="noreferrer" className="social-item text-center"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
                                     <a href="https://youtube.com/c/HassanNasserMohamed"
                                         target="_blank"
-                                        rel="noreferrer" class="social-item"><FontAwesomeIcon className="social-icon" icon={faYoutube} /></a>
+                                        rel="noreferrer" className="social-item"><FontAwesomeIcon className="social-icon" icon={faYoutube} /></a>
                                     <a href="https://www.upwork.com/freelancers/hassannasser"
                                         rel="noreferrer"
-                                        target="_blank" class="social-item"><FontAwesomeIcon className="social-icon" icon={faUpwork} /></a>
+                                        target="_blank" className="social-item"><FontAwesomeIcon className="social-icon" icon={faUpwork} /></a>
                                     <a href="https://www.github.com/Hassan-Nasser"
                                         target="_blank"
-                                        rel="noreferrer" class="social-item"><FontAwesomeIcon className="social-icon" icon={faGithub} /></a>
+                                        rel="noreferrer" className="social-item"><FontAwesomeIcon className="social-icon" icon={faGithub} /></a>
                                 </li>
                             </ul>
 

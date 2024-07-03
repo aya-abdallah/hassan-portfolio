@@ -48,6 +48,9 @@ class Projects extends Component {
         return (
             <div className="work" id="portfolio">
                 <div className=" container">
+                    <div className="row">
+                    <h3 className="TechnaSans center font-3 white">Stuff I worked on </h3>
+                    </div>
                     <div className="work__gallery">
                         <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2} >
                             {this.state.projects && this.state.projects.map((project, index) => (
@@ -77,7 +80,7 @@ class Projects extends Component {
                         </Masonry >
                     </div>
 
-                    <Link className=" primary-btn" to="/portfolio">See More Projects ?</Link>
+                    <Link className=" primary-btn" to="/portfolio?id=-1">See More Projects </Link>
 
                     {this.state.isOpen &&
                         <Modal project={this.state.currentProject} isOpen={this.state.isOpen} onClose={() => this.setState({ isOpen: false })} />}

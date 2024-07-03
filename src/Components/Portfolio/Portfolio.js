@@ -5,6 +5,7 @@ import firebase from 'firebase/compat/app';
 import { collection, getDoc, getDocs, query, where } from "firebase/firestore";
 import { Pagination } from "../Pagination/Pagination";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
+import { withRouter } from "../../config/withRouter";
 
 class Portfolio extends Component {
     constructor(props) {
@@ -15,9 +16,17 @@ class Portfolio extends Component {
             selected: -1,
         };
     }
+
+
     componentDidMount() {
         this.getAllTags();
-        this.getAllProject();
+        const tagId = window.location.hash.split('=')[1];
+        if (tagId == "-1") {
+            this.getAllProject();
+            return;
+        }
+        this.getProjectWithTag(tagId)
+
     }
 
     getAllTags = async () => {
@@ -43,8 +52,8 @@ class Portfolio extends Component {
         }))
         this.setState({ projects: projectList });
     }
-    getProjectWithTag = async (tag) => {
-        const tagRef = firebase.firestore().collection('tags').doc(tag.id);
+    getProjectWithTag = async (tagId) => {
+        const tagRef = firebase.firestore().collection('tags').doc(tagId);
         const projectDocs = query(collection(db, "projects"), where("tags", "array-contains", tagRef));
         const allDocs = await getDocs(projectDocs);
         const projectList = await Promise.all(allDocs.docs.map(async (doc) => {
@@ -56,12 +65,15 @@ class Portfolio extends Component {
         this.setState({ projects: projectList });
     }
     onTagClick = (tag, index) => {
+
         this.setState({ selected: index });
         if (index == -1) {
+            this.props.navigate(`/portfolio?id=-1`)
             this.getAllProject();
             return
         }
-        this.getProjectWithTag(tag)
+        this.props.navigate(`/portfolio?id=${tag.id}`)
+        this.getProjectWithTag(tag.id)
     }
 
     render() {
@@ -71,9 +83,9 @@ class Portfolio extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="portfolio__filter">
-                                <li className={this.state.selected === -1 ? "active" : ""} onClick={() => { this.onTagClick({}, -1) }}>All</li>
+                                <li className={`TechnaSans ${this.state.selected === -1 ? "active" : ""}`} onClick={() => { this.onTagClick({}, -1) }}>All</li>
                                 {this.state.tags && this.state.tags.map((tag, index) =>
-                                    <li className={`Merienda ${this.state.selected === index ? "active" : ""}`} onClick={() => { this.onTagClick(tag, index) }} key={index}>{tag.name}</li>
+                                    <li className={`TechnaSans ${this.state.selected === index ? "active" : ""}`} onClick={() => { this.onTagClick(tag, index) }} key={index}>{tag.name}</li>
                                 )}
                             </ul>
                         </div>
@@ -85,12 +97,9 @@ class Portfolio extends Component {
                         )}
 
                     </div>
-
-                   
-                       
                 </div>
             </section>
         );
     }
 }
-export default Portfolio 
+export default withRouter(Portfolio) 

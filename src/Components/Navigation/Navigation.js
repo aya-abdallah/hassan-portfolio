@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navigation.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { HashLink } from "react-router-hash-link";
 
 export function Navigation(props) {
@@ -40,15 +39,15 @@ export function Navigation(props) {
                             <HashLink smooth className="nav-link page-scroll" to="/#profile">Profile</HashLink>
 
                         </li>
-
-                        <li className="nav-item" onClick={() => setShowNavbar(false)}>
-                            <HashLink smooth className="nav-link page-scroll" to="/#services">Services</HashLink>
-
-                        </li>
                         <li className="nav-item" onClick={() => setShowNavbar(false)}>
 
                             <HashLink smooth className="nav-link page-scroll" to="/#portfolio">Portfolio</HashLink>
                         </li>
+                        <li className="nav-item" onClick={() => setShowNavbar(false)}>
+                            <HashLink smooth className="nav-link page-scroll" to="/#services">Services</HashLink>
+
+                        </li>
+
                         <li className="nav-item" onClick={() => setShowNavbar(false)}>
 
                             <HashLink smooth className="nav-link page-scroll" to="/#testimonial">Testimonial</HashLink>

@@ -12,18 +12,18 @@ export function About(props) {
                     <div className="col-lg-3">
                         <div className="text-container montserrat">
                             <h2>Hi there I'm <strong>Hassan,</strong></h2>
-                            <p>I am a passionate game developer. I enjoy playing games. Because I like to play games, I became interested in game production at a young age.
-
+                            <p>
+                                I'm an expert game developer with {new Date().getFullYear() - 2017} years of experience, Here are highlights from my recent roles.
                             </p>
                         </div>
                     </div>
                     <div className="col-lg-9">
-                        <div class="row flex-column h-100">
+                        <div className="row flex-column h-100">
                             <div className="col flex-grow-0 text-container ex-container">
                                 <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - Present</div>
                                 <h6 className="job-title montserrat">Senior Game Developer</h6>
                                 <h6 className="company">Upwork - Freelance</h6>
-                                <p className="job-description montserrat">Worked on large scale multiplayer games for mobile.<br />
+                                <p className="job-description montserrat">Worked with market-leading companies developing large-scale mobile games and AR apps, delivering innovative solutions and exceptional user experiences.<br />
                                 </p>
 
                             </div>
@@ -33,8 +33,7 @@ export function About(props) {
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2022</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company">Chrono Games</h6>
-                                    <p className="job-description montserrat"> Managed game rework and project analysis for game features and server
-                                        tech that can scale to millions of users.<br />
+                                    <p className="job-description montserrat">Played a pivotal role in optimizing 'Forest Knight's' network architecture for large-scale mobile gaming, supporting hundreds of thousands of players.<br />
                                     </p>
                                 </div>
                             </div>
@@ -43,7 +42,7 @@ export function About(props) {
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2022</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company">Front Tech, LLC – Part Time</h6>
-                                    <p className="job-description montserrat"> Managed development and project architecture of a new mobile game.<br />
+                                    <p className="job-description montserrat"> Led the development of 'Millionaire Deal - Card Game,' a multiplayer card game with unique collectible cards, focusing on enhancing gameplay mechanics and player engagement.<br />
                                     </p>
 
                                 </div>
@@ -53,8 +52,8 @@ export function About(props) {
 
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2021</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
-                                    <h6 className="company">Virtual Viewing Ltd</h6>
-                                    <p className="job-description montserrat"> Worked closely with company leadership to architect and design games.<br />
+                                    <h6 className="company"> Alamat.tech</h6>
+                                    <p className="job-description montserrat">Developed a wide range of hyper-casual games, AR experiences, and multiplayer games.<br />
                                     </p>
                                 </div>
                             </div>

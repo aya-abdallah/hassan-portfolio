@@ -1,6 +1,7 @@
 import React from "react";
 import "./Profile.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { HashLink } from "react-router-hash-link";
 
 export function Profile(props) {
     return (
@@ -13,7 +14,7 @@ export function Profile(props) {
                             <span className="intro-text">
                                 From casual games to multiplayer epics, and pushing boundaries with interactive AR/VR applications on Unity and Unreal Engine.
                             </span><br />
-                            <a className="btn-solid-lg page-scroll" href="#about">Discover</a>
+                            <HashLink smooth className="btn-solid-lg page-scroll" to="/#portfolio">Discover</HashLink>
                         </div>
                     </div>
                 </div>
