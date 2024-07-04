@@ -52,7 +52,7 @@ class Portfolio extends Component {
             return project;
         }))
         this.setState({ projects: projectList });
-        this.child.current.SetLoading();
+        this.child.current.SetLoading(false);
     }
     getProjectWithTag = async (tagId) => {
         const tagRef = firebase.firestore().collection('tags').doc(tagId);
@@ -64,7 +64,7 @@ class Portfolio extends Component {
             project.tags = await Promise.all(doc.data().tags.map(async (tag) => await (await getDoc(tag)).data()));
             return project;
         }))
-        this.child.current.SetLoading();
+        this.child.current.SetLoading(false);
         this.setState({ projects: projectList });
     }
     onTagClick = (tag, index) => {
@@ -88,11 +88,19 @@ class Portfolio extends Component {
                             <ul className="portfolio__filter">
                                 <li
                                     className={`TechnaSans ${this.state.selected === -1 ? "active" : ""}`}
-                                    onClick={() => { this.onTagClick({}, -1); this.child.current?.resetCurrentPage() }}>All</li>
+                                    onClick={() => {
+                                        this.onTagClick({}, -1);
+                                        this.child.current?.resetCurrentPage();
+                                        this.child.current.SetLoading(true);
+                                    }}>All</li>
                                 {this.state.tags && this.state.tags.map((tag, index) =>
                                     <li key={index}
                                         className={`TechnaSans ${this.state.selected === index ? "active" : ""}`}
-                                        onClick={() => { this.onTagClick(tag, index); this.child.current?.resetCurrentPage() }} >{tag.name}</li>
+                                        onClick={() => {
+                                            this.onTagClick(tag, index);
+                                            this.child.current?.resetCurrentPage();
+                                            this.child.current.SetLoading(true);
+                                        }} >{tag.name}</li>
                                 )}
                             </ul>
                         </div>

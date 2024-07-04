@@ -54,8 +54,8 @@ export const Pagination = React.forwardRef((props, ref) => {
         resetCurrentPage() {
             SetCurrentPage(1);
         },
-        SetLoading() {
-            SetIsLoading(false);
+        SetLoading(val) {
+            SetIsLoading(val);
         }
     }))
 
