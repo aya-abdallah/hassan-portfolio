@@ -20,7 +20,7 @@ export function About(props) {
                     <div className="col-lg-9">
                         <div className="row flex-column h-100">
                             <div className="col flex-grow-0 text-container ex-container">
-                                <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - Present</div>
+                                <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2018 - Present</div>
                                 <h6 className="job-title montserrat">Senior Game Developer</h6>
                                 <h6 className="company">Upwork - Freelance</h6>
                                 <p className="job-description montserrat">Worked with market-leading companies developing large-scale mobile games and AR apps, delivering innovative solutions and exceptional user experiences.<br />
@@ -33,7 +33,7 @@ export function About(props) {
                                     <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2022</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company">Chrono Games</h6>
-                                    <p className="job-description montserrat">Played a pivotal role in optimizing 'Forest Knight's' network architecture for large-scale mobile gaming, supporting hundreds of thousands of players.<br />
+                                    <p className="job-description montserrat">Played a pivotal role in optimizing 'Forest Knight' network architecture for large-scale mobile gaming, supporting hundreds of thousands of players.<br />
                                     </p>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ export function About(props) {
                             <div className="col">
                                 <div className="text-container ex-container">
 
-                                    <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2021 - 2021</div>
+                                    <div className="time Poppins"><FontAwesomeIcon icon={faCalendarDays} /> 2020 - 2021</div>
                                     <h6 className="job-title montserrat">Senior Game Developer</h6>
                                     <h6 className="company"> Alamat.tech</h6>
                                     <p className="job-description montserrat">Developed a wide range of hyper-casual games, AR experiences, and multiplayer games.<br />

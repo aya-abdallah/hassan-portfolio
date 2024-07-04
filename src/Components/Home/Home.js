@@ -14,8 +14,8 @@ export function Home(props) {
             <Navigation />
             <Profile />
             <About />
-            <Services />
             <Projects />
+            <Services />  
             <Testimonial />
             <Contacts />
         </>

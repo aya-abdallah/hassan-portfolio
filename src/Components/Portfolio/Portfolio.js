@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import "./Portfolio.scss";
 import { db } from "../../config/firebase";
 import firebase from 'firebase/compat/app';
@@ -15,6 +15,7 @@ class Portfolio extends Component {
             projects: [],
             selected: -1,
         };
+        this.child = React.createRef();
     }
 
 
@@ -51,6 +52,7 @@ class Portfolio extends Component {
             return project;
         }))
         this.setState({ projects: projectList });
+        this.child.current.SetLoading();
     }
     getProjectWithTag = async (tagId) => {
         const tagRef = firebase.firestore().collection('tags').doc(tagId);
@@ -62,6 +64,7 @@ class Portfolio extends Component {
             project.tags = await Promise.all(doc.data().tags.map(async (tag) => await (await getDoc(tag)).data()));
             return project;
         }))
+        this.child.current.SetLoading();
         this.setState({ projects: projectList });
     }
     onTagClick = (tag, index) => {
@@ -83,9 +86,13 @@ class Portfolio extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="portfolio__filter">
-                                <li className={`TechnaSans ${this.state.selected === -1 ? "active" : ""}`} onClick={() => { this.onTagClick({}, -1) }}>All</li>
+                                <li
+                                    className={`TechnaSans ${this.state.selected === -1 ? "active" : ""}`}
+                                    onClick={() => { this.onTagClick({}, -1); this.child.current?.resetCurrentPage() }}>All</li>
                                 {this.state.tags && this.state.tags.map((tag, index) =>
-                                    <li className={`TechnaSans ${this.state.selected === index ? "active" : ""}`} onClick={() => { this.onTagClick(tag, index) }} key={index}>{tag.name}</li>
+                                    <li key={index}
+                                        className={`TechnaSans ${this.state.selected === index ? "active" : ""}`}
+                                        onClick={() => { this.onTagClick(tag, index); this.child.current?.resetCurrentPage() }} >{tag.name}</li>
                                 )}
                             </ul>
                         </div>
@@ -93,7 +100,7 @@ class Portfolio extends Component {
 
                     <div className="row portfolio__gallery">
                         {this.state.projects && (
-                            <Pagination projectsProps={this.state.projects} />
+                            <Pagination projectsProps={this.state.projects} ref={this.child} />
                         )}
 
                     </div>
