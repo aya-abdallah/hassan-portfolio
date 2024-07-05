@@ -37,7 +37,7 @@ export function Services(props) {
                                     <p>Experienced in unreal engine and capable of developing all kind of AAA games with it, From battle royale games to FPS games to MMO games.</p>
                                 </div>
                             </div>
-                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?tag=AR_VR">
+                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?tag=AR">
                                 <div className="services__item">
                                     <div className="services__item__icon">
                                         <img className="imageIcon" src={require("../../images/icons/AR&VR.png")} alt="" />

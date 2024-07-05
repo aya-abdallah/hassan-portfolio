@@ -11,13 +11,14 @@ const tagsJson = {
     "Multiplayer": { index: 0, id: "1" },
     "Metaverse": { index: 1, id: "2" },
     "Blockchain": { index: 2, id: "3" },
-    "Turn Based": { index: 3, id: "4" },
+    "Turn_Based": { index: 3, id: "4" },
     "Shopping": { index: 4, id: "5" },
     "Collectible_Cards": { index: 5, id: "6" },
     "Casual": { index: 6, id: "7" },
-    "AR_VR": { index: 7, id: "8" },
-    "Mobile": { index: 8, id: "a10" },
-    "Software": { index: 9, id: "a11" },
+    "VR": { index: 7, id: "8" },
+    "AR": { index: 8, id: "9" },
+    "Mobile": { index: 9, id: "a10" },
+    "Software": { index: 10, id: "a11" },
 }
 class Portfolio extends Component {
     constructor(props) {
@@ -33,8 +34,8 @@ class Portfolio extends Component {
 
     componentDidMount() {
         this.getAllTags();
-        const tagName = window.location.hash.split('=')[1];
-
+        const tagName = window.location.hash.split('=')[1] || "All";
+        console.log("tagname = ",tagName);
         if (tagName === "All") {
             this.getAllProject();
             return;
@@ -85,11 +86,13 @@ class Portfolio extends Component {
 
         this.setState({ selected: index });
         if (index == -1) {
-            this.props.navigate(`/portfolio?id=-1`)
+            this.props.navigate(`/portfolio?tag=All`)
             this.getAllProject();
             return
         }
-        this.props.navigate(`/portfolio?id=${tag.id}`)
+        const [key, value] = Object.entries(tagsJson).find(([key, value]) => value.index == index) || [];
+        console.log(key, value); // Output: "key2" "value2"
+        this.props.navigate(`/portfolio?tag=${key}`)
         this.getProjectWithTag(tag.id)
     }
 
