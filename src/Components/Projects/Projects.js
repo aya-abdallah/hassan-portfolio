@@ -97,7 +97,7 @@ class Projects extends Component {
                         </Masonry >
                     </div>
 
-                    <Link className=" primary-btn" to="/portfolio?id=-1">See More Projects </Link>
+                    <Link className=" primary-btn" to="/portfolio?tag=All">See More Projects </Link>
 
                     {this.state.isOpen &&
                         <Modal project={this.state.currentProject} isOpen={this.state.isOpen} onClose={() => this.setState({ isOpen: false })} />}

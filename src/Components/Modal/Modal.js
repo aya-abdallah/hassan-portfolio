@@ -50,26 +50,29 @@ class Modal extends Component {
                 onKeyDown={(e) => this.handleKeydown(e)}
                 onClick={(e) => this.handleClickOutside(e)}
             >
-                <div
-                    className="dialog"
-                    ref={this.dialogRef}
-                    tabIndex={1}
-                    onKeyDown={(e) => this.handleKeydown(e)}
-                >
-                    <div className="modal-title-container">
-                        <div className="modal-title">{this.props.project.name}</div>
-                        <FontAwesomeIcon icon={faCircleXmark}  size="2x" onClick={()=>this.props.onClose()}/>
-                    </div>
-                    <iframe className="iframe" src={this.props.project.url} />
-                    <ul className="">
-                        {this.props.project.tags.map((tag, index) =>
-                            <li className=" tag-list montserrat" key={index}>{tag.name}</li>
-                        )}
-                    </ul>
-                    <div className="Mukta description">{this.props.project.description}</div>
-                   
+                <div className="animate-modal">
+                    <div
+                        className="dialog"
+                        ref={this.dialogRef}
+                        tabIndex={1}
+                        onKeyDown={(e) => this.handleKeydown(e)}
+                    >
+                        <div className="modal-title-container">
+                            <div className="modal-title">{this.props.project.name}</div>
+                            <FontAwesomeIcon icon={faCircleXmark} size="2x" onClick={() => this.props.onClose()} />
+                        </div>
+                        <iframe className="iframe" src={this.props.project.url} />
+                        <ul className="">
+                            {this.props.project.tags.map((tag, index) =>
+                                <li className=" tag-list montserrat" key={index}>{tag.name}</li>
+                            )}
+                        </ul>
+                        <div className="Mukta description">{this.props.project.description}</div>
 
+
+                    </div>
                 </div>
+
             </div>);
     }
 }

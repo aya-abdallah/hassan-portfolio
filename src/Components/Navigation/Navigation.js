@@ -30,7 +30,7 @@ export function Navigation(props) {
                 <div className={`navbar-collapse offcanvas-collapse ${showNavbar ? "open" : ""}`} id="navbarsExampleDefault">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item" onClick={() => setShowNavbar(false)}>
-                            <HashLink smooth className="nav-link page-scroll" to="/#">Home</HashLink>
+                            <HashLink smooth className="nav-link page-scroll" to="/">Home</HashLink>
                         </li>
                         <li className="nav-item" onClick={() => {
 

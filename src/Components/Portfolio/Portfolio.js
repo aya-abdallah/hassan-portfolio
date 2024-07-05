@@ -7,6 +7,18 @@ import { Pagination } from "../Pagination/Pagination";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
 import { withRouter } from "../../config/withRouter";
 
+const tagsJson = {
+    "Multiplayer": { index: 0, id: "1" },
+    "Metaverse": { index: 1, id: "2" },
+    "Blockchain": { index: 2, id: "3" },
+    "Turn Based": { index: 3, id: "4" },
+    "Shopping": { index: 4, id: "5" },
+    "Collectible_Cards": { index: 5, id: "6" },
+    "Casual": { index: 6, id: "7" },
+    "AR_VR": { index: 7, id: "8" },
+    "Mobile": { index: 8, id: "a10" },
+    "Software": { index: 9, id: "a11" },
+}
 class Portfolio extends Component {
     constructor(props) {
         super(props);
@@ -21,12 +33,14 @@ class Portfolio extends Component {
 
     componentDidMount() {
         this.getAllTags();
-        const tagId = window.location.hash.split('=')[1];
-        if (tagId == "-1") {
+        const tagName = window.location.hash.split('=')[1];
+
+        if (tagName === "All") {
             this.getAllProject();
             return;
         }
-        this.getProjectWithTag(tagId)
+        this.getProjectWithTag(tagsJson[tagName].id)
+        this.setState({ selected: tagsJson[tagName].index })
 
     }
 

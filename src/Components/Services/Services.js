@@ -19,7 +19,7 @@ export function Services(props) {
                     </div>
                     <div className="col-lg-8">
                         <div className="row">
-                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?id=-1">
+                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?tag=All">
                                 <div className="services__item">
                                     <div className="services__item__icon">
                                         <img className="imageIcon" src={require("../../images/icons/Unity.png")} alt="" />
@@ -37,7 +37,7 @@ export function Services(props) {
                                     <p>Experienced in unreal engine and capable of developing all kind of AAA games with it, From battle royale games to FPS games to MMO games.</p>
                                 </div>
                             </div>
-                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?id=8">
+                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?tag=AR_VR">
                                 <div className="services__item">
                                     <div className="services__item__icon">
                                         <img className="imageIcon" src={require("../../images/icons/AR&VR.png")} alt="" />
@@ -46,7 +46,7 @@ export function Services(props) {
                                     <p>Used different frameworks like Photon and Unet with unity to integrate multiplayer to different kind of games,board games with turn based and Host migration multiplayer, and real-time strategy games.</p>
                                 </div>
                             </Link>
-                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?id=1">
+                            <Link className="col-lg-6 col-md-6 col-sm-6 pointer" to="/portfolio?tag=Multiplayer">
                                 <div className="services__item">
                                     <div className="services__item__icon">
                                         <img className="imageIcon" src={require("../../images/icons/Multiplayer.png")} alt="" />
